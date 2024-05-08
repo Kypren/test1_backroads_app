@@ -5,18 +5,17 @@ const Tours = () => {
     <section className="section" id="tours">
       <div className="section-title">
         <h2>
-          <Title title="featured" subTitle="tours"></Title>
+          <Title title="Nasza" subTitle="oferta"></Title>
         </h2>
       </div>
 
       <div className="section-center featured-center">
         {tours.map((tour) => {
-          const { id, date, title, text, img, period, country, price } = tour;
+          const { id, title, text, img, price, link } = tour;
           return (
-            <article key={id} className="tour-card">
+            <a href={link} key={id} className="tour-card">
               <div className="tour-img-container">
                 <img src={img} className="tour-img" alt="" />
-                <p className="tour-date">{date}</p>
               </div>
               <div className="tour-info">
                 <div className="tour-title">
@@ -24,17 +23,11 @@ const Tours = () => {
                 </div>
                 <p>{text}</p>
                 <div className="tour-footer">
-                  <p>
-                    <span>
-                      <i className="fas fa-map"></i>
-                    </span>
-                    {country}
-                  </p>
-                  <p>{period}</p>
-                  <p>{price}</p>
+                <i className="fas fa-dollar-sign fa-fw"></i>
+                <p>{price}</p>
                 </div>
               </div>
-            </article>
+            </a>
           );
         })}
       </div>

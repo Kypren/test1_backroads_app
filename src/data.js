@@ -1,39 +1,38 @@
-import tour1 from "./images/tour-1.jpeg";
-import tour2 from "./images/tour-2.jpeg";
-import tour3 from "./images/tour-3.jpeg";
-import tour4 from "./images/tour-4.jpeg";
+import tour1 from "./images/iceskates.jpg";
+import tour2 from "./images/roller.jpg";
+import tour3 from "./images/ostrza.jpg";
+import tour4 from "./images/wheels.jpg";
 
 export const pageLinks = [
-  { id: 1, href: "#home", text: "home" },
-  { id: 2, href: "#about", text: "about" },
-  { id: 3, href: "#services", text: "services" },
-  { id: 4, href: "#tours", text: "tours" },
+  { id: 1, href: "/", text: "Home" },
+  { id: 2, href: "#about", text: "O nas" },
+  { id: 3, href: "#services", text: "Usługi" },
+  { id: 4, href: "#tours", text: "Oferta " },
 ];
 
 export const socialLinks = [
   { id: 1, href: "https://www.twitter.com", icon: "fab fa-facebook" },
-  { id: 2, href: "https://www.twitter.com", icon: "fab fa-twitter" },
-  { id: 3, href: "https://www.twitter.com", icon: "fab fa-squarespace" },
+  { id: 2, href: "https://www.twitter.com", icon: "fab fa-instagram" },
 ];
 
 export const services = [
   {
     id: 1,
     icon: "fas fa-wallet fa-fw",
-    title: "saving money",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+    title: "Sprzedaż łyżew, rolek oraz akcesoriów",
+    text: "Sprzedajemy wysokiej jakości łyżwy oraz rolki, które można w pełni spersonalizować.",
   },
   {
     id: 2,
-    icon: "fas fa-tree fa-fw",
-    title: "endless hiking",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+    icon: "fas fa-palette fa-fw",
+    title: "pełna personalizacja",
+    text: "Umożliwiamy klientowi dokonać pełnej personalizacji wybranych przez niego produktów.",
   },
   {
     id: 3,
-    icon: "fas fa-socks fa-fw",
-    title: "amazing comfort",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+    icon: "fas fa-screwdriver fa-fw",
+    title: "Przegląd techniczny sprzętu",
+    text: "Zapewniamy darmowy przegląd techniczny wykonywany przez profesjonalistę do czasu gwarancji produktu.",
   },
 ];
 
@@ -41,41 +40,33 @@ export const tours = [
   {
     id: 1,
     img: tour1,
-    date: "august 26th, 2020",
-    title: "Tibet Adventure",
+    title: "Łyżwy Swift",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    country: "china",
-    period: "6 days",
-    price: "from $2100",
+    price: "2499zł",
+    link: "/lyzwy"
   },
   {
     id: 2,
     img: tour2,
-    date: "october 1th, 2020",
-    title: "best of java",
+    title: "Rolki Swift",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    country: "indonesia",
-    period: "11 days",
-    price: "from $1400",
+    price: "2499zł",
+    link: "/rolki"
   },
   {
     id: 3,
     img: tour3,
-    date: "september 15th, 2020",
-    title: "explore hong kong",
+    title: "Ostrze SwiftSlicers",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    country: "hong kong",
-    period: "8 days",
-    price: "from $5000",
+    price: "499zł",
+    link: "/ostrza"
   },
   {
     id: 4,
     img: tour4,
-    date: "december 5th, 2019",
-    title: "kenya highlights",
+    title: "Kółka speedos",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
-    country: "kenya",
-    period: "20 days",
-    price: "from $3300",
+    price: "199zł",
+    link: "/kolka"
   },
 ];

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
 =============== 
 Variables
@@ -207,7 +211,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url("./images/main.jpeg") center/cover no-repeat;
+      url("./images/istockphoto-139616107-170667a.jpg") center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -369,7 +373,6 @@ Featured Tours
 /* end of additional css for different layout*/
 .tour-footer {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -420,7 +423,7 @@ Footer
   color: var(--clr-white);
   text-transform: capitalize;
   font-size: 1rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   letter-spacing: var(--spacing);
   transition: var(--transition);
 }
@@ -491,6 +494,7 @@ Navbar
 .nav-link {
   display: block;
   padding: 1rem 2rem;
+  margin: 2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   transition: var(--transition);
@@ -557,4 +561,45 @@ Navbar
   .nav-icon:hover {
     color: var(--clr-primary-8);
   }
+}
+
+
+/* Radio inputs styling */
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }

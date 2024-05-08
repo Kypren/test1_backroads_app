@@ -1,5 +1,6 @@
-import logo from "../images/logo.svg";
+import logo from "../images/logo2.jpeg";
 import { pageLinks, socialLinks } from "../data";
+import Koszyk from "./Koszyk";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,8 @@ const Navbar = () => {
             );
           })}
         </ul>
+
+        <Koszyk />
 
         <ul className="nav-icons">
           {socialLinks.map((link) => {

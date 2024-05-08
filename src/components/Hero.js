@@ -2,13 +2,12 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-banner">
-        <h1>Backroads App</h1>
+        <h1>SWIFTSKATE</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          explicabo debitis est autem dicta.
+          Zapewniamy klientom wysokiej jakości, innowacyjne produkty do jazdy na łyżwach i rolkach, które inspirują do aktywnego trybu życia i radości z ruchu na świeżym powietrzu.
         </p>
         <a href="#tours" className="btn hero-btn">
-          explore tours
+          SPRAWDŹ OFERTY
         </a>
       </div>
     </section>
