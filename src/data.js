@@ -41,7 +41,7 @@ export const tours = [
     id: 1,
     img: tour1,
     title: "Łyżwy Swift",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    text: "W pełni profesjonalne łyżwy, które możesz spersonalizować do swoich potrzeb. Posiadają wbudowany mini-komputer odczytujący przebyty dystans oraz prędkość.",
     price: "2499zł",
     link: "/lyzwy"
   },
@@ -49,7 +49,7 @@ export const tours = [
     id: 2,
     img: tour2,
     title: "Rolki Swift",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    text: "W pełni profesjonalne rolki, które możesz spersonalizować do swoich potrzeb. Posiadają wbudowany mini-komputer odczytujący przebyty dystans oraz prędkość.",
     price: "2499zł",
     link: "/rolki"
   },
@@ -57,7 +57,7 @@ export const tours = [
     id: 3,
     img: tour3,
     title: "Ostrze SwiftSlicers",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    text: "Wykonane z hartowanego stali nierdzewnej, są trwałe i odporne na ścieranie. Specjalnie zaprojektowany kształt i ostre krawędzie gwarantują płynne ślizgi oraz doskonałą stabilność podczas jazdy. Dostępne w różnych rozmiarach i wzorach szlifu, aby sprostać różnym preferencjom i stylom łyżwiarskim.",
     price: "499zł",
     link: "/ostrza"
   },
@@ -65,7 +65,7 @@ export const tours = [
     id: 4,
     img: tour4,
     title: "Kółka speedos",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    text: "Wykonane z wysokiej jakości materiałów, takich jak poliuretan czy silikon, zapewniają doskonałą przyczepność i trwałość na różnych powierzchniach. Dostępne w różnych rozmiarach i twardościach, kółka mogą być dostosowane do indywidualnych preferencji użytkownika oraz warunków jazdy.",
     price: "199zł",
     link: "/kolka"
   },
