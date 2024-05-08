@@ -1,6 +1,10 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/cart-context"
 import { tours } from "../../data";
+import ost1 from "../../images/ost1.jpg"
+import ost2 from "../../images/ost2.jpg"
+import ost3 from "../../images/ost3.png"
+import ost4 from "../../images/ost4.jpg"
 
 export default function Ostrza() {
   const cartContext = useContext(CartContext)
@@ -23,7 +27,7 @@ export default function Ostrza() {
       <div className="flex-col-reverse md:flex-row flex gap-8">
         <div className="space-y-4">
           <img 
-            src="https://images.unsplash.com/photo-1589663924441-4bbcd2fb4391?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={ost1}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -31,7 +35,7 @@ export default function Ostrza() {
           />
 
           <img 
-            src="https://images.unsplash.com/photo-1615828087808-ee81ce35fbec?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={ost2}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -39,7 +43,7 @@ export default function Ostrza() {
           />
 
           <img 
-            src="https://images.unsplash.com/photo-1638720495078-facd4bd6625f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={ost3}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -47,7 +51,7 @@ export default function Ostrza() {
           />
 
           <img 
-            src="https://images.unsplash.com/photo-1517177646641-83fe10f14633?q=80&w=2133&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={ost4}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -58,7 +62,7 @@ export default function Ostrza() {
         <div className="h-fit sticky top-32">
           <form onSubmit={handleSubmit} className="grid gap-4">
             <div>
-              <h2 className="mb-1">Ostrza Fajne</h2>
+              <h2 className="mb-1">Ostrza SwiftSlicers</h2>
               <p className="font-semibold text-xl">Cena - {CENA}zł</p>
             </div>
 
