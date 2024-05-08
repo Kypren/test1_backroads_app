@@ -192,7 +192,7 @@ export default function Podsumowanie() {
             </button>
           </div>
         ))}
-
+        <div>{priceSum}</div>
         <button className="cursor-pointer px-4 py-2 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
           Zamów
         </button>
