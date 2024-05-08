@@ -5,8 +5,8 @@ export default function Podsumowanie() {
   const { cart, priceSum, removeItem } = useContext(CartContext);
   return (
     <main className="pt-32 pb-16 px-2 max-w-3xl mx-auto">
-      <h1>Podsumowanie zamówienia</h1>
-      <form className="grid gap-4">
+      <h2 className="mb-8">Podsumowanie zamówienia</h2>
+      <form className="grid gap-4 grid-cols-2">
         <div>
           <label
             htmlFor="Imie"
@@ -126,9 +126,9 @@ export default function Podsumowanie() {
           </div>
         </div>
 
-        <fieldset>
+        <fieldset className="col-span-2">
           <legend className="font-semibold mb-2">
-            Wybierz forme płatności
+            Wybierz metodę płatności
           </legend>
 
           <div className="radio-inputs">
@@ -147,52 +147,60 @@ export default function Podsumowanie() {
           </div>
         </fieldset>
 
-        <div className="h-0.5 bg-primary"></div>
+        <div className="col-span-2">
+          <div className="h-0.5 bg-primary mb-4"></div>
 
-        <h3>Zamówione produkty</h3>
+          <h3>Zamówione produkty</h3>
 
-        {cart.map((item) => (
-          <div className="border-l border-blue-500 px-2 py-1 flex gap-4 justify-between hover:bg-accent rounded-r">
-            <div>
-              <h5>
-                {item.name}
-                {item.height && (
-                  <span className="text-sm ml-2">- dług: {item.height}</span>
-                )}
-                {item.width && (
-                  <span className="text-sm ml-2">- szer: {item.width}</span>
-                )}
-                {item.quantity && (
-                  <span className="text-sm ml-2">- ilość: {item.quantity}</span>
-                )}
-              </h5>
-              <div className="text-sm flex gap-2 opacity-80">
-                <span>{item.cena}zł</span>
-                <span>{item.color}</span>
-                <span>{item.type}</span>
+          {cart.map((item) => (
+            <div className="border-l border-blue-500 px-2 py-1 flex gap-4 justify-between hover:bg-accent rounded-r">
+              <div>
+                <h5>
+                  {item.name}
+                  {item.height && (
+                    <span className="text-sm ml-2">- dług: {item.height}</span>
+                  )}
+                  {item.width && (
+                    <span className="text-sm ml-2">- szer: {item.width}</span>
+                  )}
+                  {item.quantity && (
+                    <span className="text-sm ml-2">
+                      - ilość: {item.quantity}
+                    </span>
+                  )}
+                </h5>
+                <div className="text-sm flex gap-2 opacity-80">
+                  <span>{item.cena}zł</span>
+                  <span>{item.color}</span>
+                  <span>{item.type}</span>
+                </div>
               </div>
-            </div>
 
-            <button onClick={() => removeItem(item.id)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M3 6h18" />
-                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-              </svg>
-            </button>
-          </div>
-        ))}
-        <div>{priceSum}</div>
+              <button onClick={() => removeItem(item.id)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 6h18" />
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                </svg>
+              </button>
+            </div>
+          ))}
+        </div>
+        <h2 className="text-3xl">
+          Do zapłaty: <span className="font-bold">{priceSum}zł</span>
+        </h2>
+        <div className="h-0.5 bg-primary col-span-2"></div>
+
         <button className="cursor-pointer px-4 py-2 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
           Zamów
         </button>
