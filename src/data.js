@@ -33,6 +33,12 @@ export const services = [
     title: "Przegląd techniczny sprzętu",
     text: "Zapewniamy darmowy przegląd techniczny wykonywany przez profesjonalistę do czasu gwarancji produktu.",
   },
+  {
+    id: 4,
+    icon: "fas fa-screwdriver fa-fw",
+    title: "Gwarancja",
+    text: "Nasza 2-letnia gwarancja na łyżwy i rolki pozwala na zwrot gotówki lub wymianę uszkodznego produktu",
+  },
 ];
 
 export const tours = [
