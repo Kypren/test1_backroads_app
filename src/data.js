@@ -35,7 +35,7 @@ export const services = [
   },
   {
     id: 4,
-    icon: "fas fa-screwdriver fa-fw",
+    icon: "fas fa-file-invoice fa-fw",
     title: "Gwarancja",
     text: "Nasza 2-letnia gwarancja na łyżwy i rolki pozwala na zwrot gotówki lub wymianę uszkodznego produktu",
   },
