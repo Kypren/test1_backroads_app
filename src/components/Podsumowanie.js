@@ -130,7 +130,7 @@ export default function Podsumowanie() {
             htmlFor="Rabat"
             className="block text-gray-800 font-semibold text-sm"
           >
-            rabat
+            kod rabatowy
           </label>
           <div className="mt-2">
             <input
