@@ -94,7 +94,18 @@ export default function Kolka() {
                 </label>
               </div>
             </fieldset>
-
+            <div>
+              <label htmlFor="quantity" className="block text-gray-800 font-semibold text-sm"
+                >Kod rabatowy</label>
+              <div className="mt-2">
+                <input
+                  type="number"
+                  name="quantity"
+                  id="quantity"
+                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
+                />
+              </div>
+            </div>
             <button className="cursor-pointer px-4 py-2 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
               Dodaj do koszyka
             </button>
