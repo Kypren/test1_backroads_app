@@ -99,9 +99,9 @@ export default function Kolka() {
                 >Kod rabatowy</label>
               <div className="mt-2">
                 <input
-                  type="number"
-                  name="quantity"
-                  id="quantity"
+                  type="text"
+                  name="rabat"
+                  id="rabat"
                   className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
                 />
               </div>
