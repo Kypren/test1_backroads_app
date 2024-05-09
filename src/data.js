@@ -11,7 +11,7 @@ export const pageLinks = [
 ];
 
 export const socialLinks = [
-  { id: 1, href: "www.instagram.com/swiftskate_sklep?igsh=MWFiYnJqc3Y1ODJ1ZQ==", icon: "fab fa-instagram" },
+  { id: 1, href: "https://www.instagram.com/swiftskate_sklep", icon: "fab fa-instagram" },
 ];
 
 export const services = [
