@@ -125,7 +125,22 @@ export default function Podsumowanie() {
             />
           </div>
         </div>
-
+        <div>
+          <label
+            htmlFor="Rabat"
+            className="block text-gray-800 font-semibold text-sm"
+          >
+            rabat
+          </label>
+          <div className="mt-2">
+            <input
+              type="text"
+              name="Rabat"
+              id="kolor"
+              className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
+            />
+          </div>
+        </div>
         <fieldset className="col-span-2">
           <legend className="font-semibold mb-2">
             Wybierz metodę płatności
