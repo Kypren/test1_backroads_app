@@ -23,7 +23,6 @@ const Tours = () => {
                 </div>
                 <p>{text}</p>
                 <div className="tour-footer">
-                <i className="fas fa-dollar-sign fa-fw"></i>
                 <p>{price}</p>
                 </div>
               </div>
