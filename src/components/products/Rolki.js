@@ -16,6 +16,7 @@ export default function Rolki() {
     data.append("id", Math.floor(Math.random() * 100))
     data.append("cena", CENA)
     data.append("name", "Rolki")
+    data.append("quantity", 1)
     const product = Object.fromEntries([...data.entries()]);
     cartContext.addToCart(product)
   }
