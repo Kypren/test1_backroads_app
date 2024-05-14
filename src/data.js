@@ -5,9 +5,9 @@ import tour4 from "./images/wheels.jpg";
 
 export const pageLinks = [
   { id: 1, href: "/", text: "Home" },
-  { id: 2, href: "#about", text: "O nas" },
-  { id: 3, href: "#services", text: "Usługi" },
-  { id: 4, href: "#tours", text: "Oferta " },
+  { id: 2, href: "/#about", text: "O nas" },
+  { id: 3, href: "/#services", text: "Usługi" },
+  { id: 4, href: "/#tours", text: "Oferta " },
 ];
 
 export const socialLinks = [
