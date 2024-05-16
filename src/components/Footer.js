@@ -1,4 +1,4 @@
-import { pageLinks, socialLinks } from "../data";
+import { pageLinks } from "../data";
 const Footer = () => {
   return (
     <footer className="section footer">
