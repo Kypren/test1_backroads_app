@@ -35,8 +35,8 @@ const Footer = () => {
         copyright &copy; SWIFTSKATE company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved
       </p>
-      <p>Jeśli chcesz się z nami skontaktować wejdź na nasz profil na instagramie</p>
-      <ul className="nav-icons">
+      <p className="copyright">Jeśli chcesz się z nami skontaktować wejdź na nasz profil na instagramie       
+        <ul className="nav-icons">
           {socialLinks.map((link) => {
             const { id, href, icon } = link;
             return (
@@ -52,7 +52,8 @@ const Footer = () => {
               </li>
             );
           })}
-        </ul>
+        </ul></p>
+
     </footer>
   );
 };
