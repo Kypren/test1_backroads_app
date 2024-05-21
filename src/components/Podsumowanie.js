@@ -6,7 +6,7 @@ export default function Podsumowanie() {
   return (
     <main className="pt-32 pb-16 px-2 max-w-3xl mx-auto">
       <h2 className="mb-8">Podsumowanie zamówienia</h2>
-      <form className="grid gap-4 grid-cols-2">
+      <form className="grid gap-4 grid-cols-1 md:grid-cols-2">
         <div>
           <label
             htmlFor="Imie"
@@ -141,7 +141,7 @@ export default function Podsumowanie() {
             />
           </div>
         </div>
-        <fieldset className="col-span-2">
+        <fieldset className="md:col-span-2">
           <legend className="font-semibold mb-2">
             Wybierz metodę płatności
           </legend>
@@ -162,7 +162,7 @@ export default function Podsumowanie() {
           </div>
         </fieldset>
 
-        <div className="col-span-2">
+        <div className="md:col-span-2">
           <div className="h-0.5 bg-primary mb-4"></div>
 
           <h3>Zamówione produkty</h3>
@@ -214,7 +214,7 @@ export default function Podsumowanie() {
         <h2 className="text-3xl">
           Do zapłaty: <span className="font-bold">{priceSum}zł</span>
         </h2>
-        <div className="h-0.5 bg-primary col-span-2"></div>
+        <div className="h-0.5 bg-primary md:col-span-2"></div>
 
         <button className="cursor-pointer px-4 py-2 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
           Zamów

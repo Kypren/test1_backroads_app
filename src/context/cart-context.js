@@ -41,7 +41,6 @@ export default function CartContextProvider ({ children }) {
   }
 
   useEffect(() => {
-    console.log(cart)
     const prices = cart.map((item) => Number(item.cena) * Number(item.quantity))
     const sum = prices.reduce(
       (acc, curr) => acc + curr,
