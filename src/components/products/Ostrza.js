@@ -59,7 +59,7 @@ export default function Ostrza() {
           />
         </div>
 
-        <div className="h-fit sticky top-32">
+        <div className="h-fit md:sticky top-32">
           <form onSubmit={handleSubmit} className="grid gap-4">
             <div>
               <h2 className="mb-1">Ostrza SwiftSlicers</h2>

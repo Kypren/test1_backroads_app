@@ -4,16 +4,13 @@ import Koszyk from "./Koszyk";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-center">
-        <div className="nav-header">
-          <img src={logo} className="nav-logo" alt="backroads" />
-          <button type="button" className="nav-toggle" id="nav-toggle">
+    <nav className="flex fixed top-0 inset-x-0 bg-white justify-around py-4 z-50 items-center">
+          <img src={logo} className="nav-logo hidden md:block" alt="backroads" />
+          {/* <button type="button" className="nav-toggle" id="nav-toggle">
             <i className="fas fa-bars"></i>
-          </button>
-        </div>
-        {/* <!-- left this comment on purpose --> */}
-        <ul className="nav-links" id="nav-links">
+          </button> */}
+
+        <ul className="flex gap-4" id="nav-links">
           {pageLinks.map((link) => {
             return (
               <li key={link.id}>
@@ -27,7 +24,7 @@ const Navbar = () => {
 
         <Koszyk />
 
-        <ul className="nav-icons">
+        <ul className="hidden md:block">
           {socialLinks.map((link) => {
             const { id, href, icon } = link;
             return (
@@ -44,7 +41,6 @@ const Navbar = () => {
             );
           })}
         </ul>
-      </div>
     </nav>
   );
 };

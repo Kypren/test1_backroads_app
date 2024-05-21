@@ -1,4 +1,5 @@
 import {createContext, useState, useEffect} from 'react'
+import { toast } from 'sonner';
 
 function getStorageValue(key, defaultValue) {
   const saved = localStorage.getItem(key);
@@ -30,6 +31,7 @@ export default function CartContextProvider ({ children }) {
   const [priceSum, setPriceSum] = useState(0);
 
   const addToCart = (item) => {
+    toast.success('Dodano do koszyka ' + item.name)
     setCart((prev) => [...prev, item])
   };
 
@@ -39,7 +41,6 @@ export default function CartContextProvider ({ children }) {
   }
 
   useEffect(() => {
-    console.log(cart)
     const prices = cart.map((item) => Number(item.cena) * Number(item.quantity))
     const sum = prices.reduce(
       (acc, curr) => acc + curr,
