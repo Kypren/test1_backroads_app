@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/cart-context"
-import { tours } from "../../data";
+import { tours, colors } from "../../data";
 
 export default function Lyzwy() {
   const cartContext = useContext(CartContext)
@@ -62,16 +62,28 @@ export default function Lyzwy() {
               <h2 className="mb-1">Łyżwy Swift</h2>
               <p className="font-semibold text-xl">Cena - {CENA}zł</p>
             </div>
+
+            <article className="about-info" >
+        <h3>Opis Produktu</h3>
+          <p>
+          W pełni profesjonalne łyżwy, które możesz spersonalizować do swoich potrzeb. Posiadają wbudowany mini-komputer odczytujący przebyty dystans oraz prędkość. 
+          </p>
+          </article>
             <div>
               <label htmlFor="kolor" className="block text-gray-800 font-semibold text-sm"
                 >Kolor</label>
               <div className="mt-2">
-                <input
-                  type="text"
-                  name="kolor"
-                  id="kolor"
-                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
-                />
+                <select id="color" className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800">
+                {colors.map((color) => {
+          const { id, text } = color;
+          return (
+            <option key={id} className="tour-card">
+                <p>{text}</p>
+    
+            </option>
+          );
+        })}
+                </select>
               </div>
               <label className="pt-1 block text-gray-500 text-sm">Wybierz dowolny kolor</label>
             </div>

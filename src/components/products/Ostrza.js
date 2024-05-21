@@ -21,7 +21,7 @@ export default function Ostrza() {
     cartContext.addToCart(product)
   }
 
-  
+
   return (
     <main className="pt-32 pb-16 px-2 max-w-3xl mx-auto">
       <div className="flex-col-reverse md:flex-row flex gap-8">
@@ -65,7 +65,12 @@ export default function Ostrza() {
               <h2 className="mb-1">Ostrza SwiftSlicers</h2>
               <p className="font-semibold text-xl">Cena - {CENA}zł</p>
             </div>
-
+            <article className="about-info" >
+        <h3>Opis Produktu</h3>
+          <p>
+          Wykonane z hartowanego stali nierdzewnej, są trwałe i odporne na ścieranie. Specjalnie zaprojektowany kształt i ostre krawędzie gwarantują płynne ślizgi oraz doskonałą stabilność podczas jazdy. Dostępne w różnych rozmiarach i wzorach szlifu, aby sprostać różnym preferencjom i stylom łyżwiarskim. 
+          </p>
+          </article>
             <div>
               <label htmlFor="height" className="block text-gray-800 font-semibold text-sm"
                 >Długość stopy</label>

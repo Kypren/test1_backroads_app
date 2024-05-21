@@ -65,7 +65,14 @@ export default function Kolka() {
               <h2 className="mb-1">Kółka Speedos</h2>
               <p className="font-semibold text-xl">Cena - {CENA}zł</p>
             </div>
+            <article className="about-info" >
+        <h3>Opis Produktu</h3>
+          <p>
+          Wykonane z wysokiej jakości materiałów, takich jak poliuretan czy silikon, zapewniają doskonałą przyczepność i trwałość na różnych powierzchniach. Dostępne w różnych twardościach, kółka mogą być dostosowane do indywidualnych preferencji użytkownika oraz warunków jazdy. 
+          </p>
 
+
+        </article>
             <div>
               <label htmlFor="quantity" className="block text-gray-800 font-semibold text-sm"
                 >Ilość kompletów</label>

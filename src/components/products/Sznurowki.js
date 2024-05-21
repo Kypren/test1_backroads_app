@@ -1,22 +1,23 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/cart-context"
-import { tours, colors } from "../../data"
-import rolki1 from "../../images/rolki1.png"
-import rolki2 from "../../images/rolki2.jpg"
-import rolki3 from "../../images/rolki3.jpg"
-import rolki4 from "../../images/rolki4.jpg"
+import { tours } from "../../data";
+import { colors } from "../../data";
+import sznurowki1 from "../../images/sznurowki1.jpg"
+import sznurowki2 from "../../images/sznurowki2.jpg"
+import sznurowki3 from "../../images/sznurowki3.jpg"
+import sznurowki4 from "../../images/sznurowki4.jpg"
 
-export default function Rolki() {
+export default function Sznurowki() {
   const cartContext = useContext(CartContext)
-  const CENA = tours.find((tour) => tour.link === "/rolki")["price"].slice(0, -2);
+  const CENA = tours.find((tour) => tour.link === "/sznurowki")["price"].slice(0, -2);
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const data = new FormData(e.target)
     data.append("id", Math.floor(Math.random() * 100))
     data.append("cena", CENA)
-    data.append("name", "Rolki")
-    data.append("quantity", 1)
+    data.append("name", "Sznurowki")
     const product = Object.fromEntries([...data.entries()]);
     cartContext.addToCart(product)
   }
@@ -27,7 +28,7 @@ export default function Rolki() {
       <div className="flex-col-reverse md:flex-row flex gap-8">
         <div className="space-y-4">
           <img 
-            src={rolki1}
+            src={sznurowki1}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -35,7 +36,7 @@ export default function Rolki() {
           />
 
           <img 
-            src={rolki2}
+            src={sznurowki2}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -43,7 +44,7 @@ export default function Rolki() {
           />
 
           <img 
-            src={rolki3}
+            src={sznurowki3}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -51,7 +52,7 @@ export default function Rolki() {
           />
 
           <img 
-            src={rolki4}
+            src={sznurowki4}
             height="400"
             width="400"
             alt="Łyżwy jakies"
@@ -62,16 +63,45 @@ export default function Rolki() {
         <div className="h-fit sticky top-32">
           <form onSubmit={handleSubmit} className="grid gap-4">
             <div>
-              <h2 className="mb-1">Rolki Swift</h2>
+              <h2 className="mb-1">Sznurówki Swiftskate</h2>
               <p className="font-semibold text-xl">Cena - {CENA}zł</p>
             </div>
             <article className="about-info" >
         <h3>Opis Produktu</h3>
           <p>
-          W pełni profesjonalne rolki, które możesz spersonalizować do swoich potrzeb. Posiadają wbudowany mini-komputer odczytujący przebyty dystans oraz prędkość. 
+          Wykonane z wysokiej jakości, odpornego na przetarcia materiału, gwarantują długotrwałą wytrzymałość nawet przy intensywnym użytkowaniu. Specjalnie zaprojektowane końcówki ułatwiają przewlekanie przez oczka. Sznurówki są dostępne w różnych kolorach, dzięki czemu można je dopasować do swojego stylu.
           </p>
           </article>
             <div>
+                <div>
+              <label htmlFor="quantity" className="block text-gray-800 font-semibold text-sm"
+                >Ilość</label>
+                <div className="mt-2">
+                <input
+                  type="number"
+                  name="quantity"
+                  id="quantity"
+                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
+                />
+                </div>
+                <label className="pt-1 block text-gray-500 text-sm">1 sztuka zawiera parę sznurówek</label>
+                </div>
+
+                <div>
+              <label htmlFor="height" className="block text-gray-800 font-semibold text-sm"
+                >Długość stopy</label>
+              <div className="mt-2">
+                <input
+                  type="number"
+                  name="height"
+                  id="height"
+                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
+                />
+              </div>
+              <label className="pt-1 block text-gray-500 text-sm">W centymetrach</label>
+            </div>
+
+                <div>
               <label htmlFor="kolor" className="block text-gray-800 font-semibold text-sm"
                 >Kolor</label>
               <div className="mt-2">
@@ -89,54 +119,7 @@ export default function Rolki() {
               </div>
               <label className="pt-1 block text-gray-500 text-sm">Wybierz dowolny kolor</label>
             </div>
-
-            <div>
-              <label htmlFor="height" className="block text-gray-800 font-semibold text-sm"
-                >Długość stopy</label>
-              <div className="mt-2">
-                <input
-                  type="number"
-                  name="height"
-                  id="height"
-                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
-                />
-              </div>
-              <label className="pt-1 block text-gray-500 text-sm">W centymetrach</label>
-            </div>
-
-            
-            <div>
-              <label htmlFor="width" className="block text-gray-800 font-semibold text-sm"
-                >Szerokość stopy</label>
-              <div className="mt-2">
-                <input
-                  type="number"
-                  name="width"
-                  id="width"
-                  className="block w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800"
-                />
-              </div>
-              <label className="pt-1 block text-gray-500 text-sm">W centymetrach</label>
-            </div>
-
-            <fieldset>
-              <legend className="font-semibold mb-2">Wybierz typ</legend>
-
-              <div className="radio-inputs">
-                <label className="radio">
-                  <input type="radio" name="type" value="hokejowe" defaultChecked />
-                  <span className="name">Hokejowe</span>
-                </label>
-                <label className="radio">
-                  <input type="radio" name="type" value="figurowe" />
-                  <span className="name">Figurowe</span>
-                </label>
-              </div>
-            </fieldset>
-
-            <div>
-              <input type="checkbox" id="haft" name="haft" />
-              <label htmlFor="haft" className="ml-1">Czy chcesz mieć własny haft</label>
+              
             </div>
             <div>
               <label htmlFor="informacje" className="block text-gray-800 font-semibold text-sm"
@@ -150,7 +133,7 @@ export default function Rolki() {
               </div>
             </div>
             <button className="cursor-pointer px-4 py-2 bg-black bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-70 transition font-semibold shadow-md">
-              Zamów
+              Dodaj do koszyka
             </button>
           </form>
         </div>

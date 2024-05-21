@@ -17,7 +17,7 @@ const About = () => {
           <p>
             Stawiamy na ciągłe badania i rozwój, aby wprowadzać innowacyjne technologie i projekty, które poprawiają wydajność, komfort i bezpieczeństwo naszych łyżew i rolek.
           </p>
-          <a href="#services" className="btn">
+          <a href="/misja" className="btn">
             Dowiedz się więcej
           </a>
         </article>

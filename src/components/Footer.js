@@ -1,4 +1,5 @@
 import { pageLinks } from "../data";
+
 const Footer = () => {
   return (
     <footer className="section footer">
@@ -14,23 +15,11 @@ const Footer = () => {
           );
         })}
       </ul>
-      <ul className="footer-icons">
-        {pageLinks.map((link) => {
-          const { id, href, icon } = link;
-          return (
-            <li key={id}>
-              <a
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="footer-icon"
-              >
-                <i className={icon}></i>
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+      
+      <a href="https://www.instagram.com/swiftskate_sklep" className="footer-link">
+        Skontaktuj się z nami
+      </a>
+
       <p className="copyright">
         copyright &copy; SWIFTSKATE company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved

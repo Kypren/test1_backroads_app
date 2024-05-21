@@ -2,12 +2,13 @@ import tour1 from "./images/iceskates.jpg";
 import tour2 from "./images/roller.jpg";
 import tour3 from "./images/ostrza.jpg";
 import tour4 from "./images/wheels.jpg";
-
+import tour5 from "./images/sznurowki2.jpg";
+import tour6 from "./images/POKROWIEC-TORBA-NA-DZIECI-NARCIARSKIE-ROLKI-LYZWY.jpg";
 export const pageLinks = [
   { id: 1, href: "/", text: "Home" },
   { id: 2, href: "/#about", text: "O nas" },
   { id: 3, href: "/#services", text: "Usługi" },
-  { id: 4, href: "/#tours", text: "Oferta " },
+  { id: 4, href: "/#tours", text: "Produkty" },
 ];
 
 export const socialLinks = [
@@ -73,5 +74,65 @@ export const tours = [
     text: "Wykonane z wysokiej jakości materiałów, takich jak poliuretan czy silikon, zapewniają doskonałą przyczepność i trwałość na różnych powierzchniach. Dostępne w różnych rozmiarach i twardościach, kółka mogą być dostosowane do indywidualnych preferencji użytkownika oraz warunków jazdy.",
     price: "199zł",
     link: "/kolka"
+  },
+  {
+  id: 5,
+  img: tour5,
+  title: "Sznurówki",
+  text: "Wykonane z wysokiej jakości, odpornego na przetarcia materiału, gwarantują długotrwałą wytrzymałość nawet przy intensywnym użytkowaniu. Specjalnie zaprojektowane końcówki ułatwiają przewlekanie przez oczka. Sznurówki są dostępne w różnych kolorach, dzięki czemu można je dopasować do swojego stylu.",
+  price: "19zł",
+  link: "/sznurowki"
+  },
+  {
+  id: 6,
+  img: tour6,
+  title: "Pokrowiec",
+  text: "Wykonany z wysokiej jakości materiałów, zapewnia maksymalną ochronę przed uszkodzeniami mechanicznymi, wilgocią i zabrudzeniami. Ergonomiczny design z regulowanym paskiem na ramię oraz uchwytami ręcznymi gwarantuje wygodę noszenia i transportu.",
+  price: "89zł",
+  link: "/pokrowiec"
+  },
+
+];
+
+export const colors = [
+  {
+    id: 1,
+    text: "Czarny",
+    
+  },
+  {
+    id: 2,
+    text: "Biały",
+    
+  },
+  {
+    id: 3,
+    text: "Czerwony",
+    
+  },
+  {
+    id: 4,
+    text: "Niebieski",
+    
+  },
+  {
+    id: 5,
+    text: "Zielony",
+    
+  },
+  {
+    id: 6,
+    text: "Pomarańczowy",
+    
+  },
+  {
+    id: 7,
+    text: "Fioletowy",
+    
+  },
+  {
+    id: 8,
+    text: "Inny",
+    
   },
 ];
