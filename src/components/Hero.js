@@ -7,7 +7,7 @@ const Hero = () => {
           Zapewniamy klientom wysokiej jakości, innowacyjne produkty do jazdy na łyżwach i rolkach, które inspirują do aktywnego trybu życia i radości z ruchu na świeżym powietrzu.
         </p>
         <a href="#tours" className="btn hero-btn">
-          SPRAWDŹ OFERTY
+          SPRAWDŹ PRODUKTY
         </a>
       </div>
     </section>
