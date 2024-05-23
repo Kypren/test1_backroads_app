@@ -396,6 +396,8 @@ Featured Tours
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    border-color: bisque;
+    
   }
 }
 @media screen and (min-width: 1170px) {
