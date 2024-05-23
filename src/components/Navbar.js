@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <Koszyk />
 
-        <ul className="hidden md:block">
+        <ul className="hidden sm:block">
           {socialLinks.map((link) => {
             const { id, href, icon } = link;
             return (
