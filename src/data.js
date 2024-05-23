@@ -80,7 +80,7 @@ export const tours = [
   img: tour5,
   title: "Sznurówki",
   text: "Wykonane z wysokiej jakości, odpornego na przetarcia materiału, gwarantują długotrwałą wytrzymałość nawet przy intensywnym użytkowaniu. Specjalnie zaprojektowane końcówki ułatwiają przewlekanie przez oczka. Sznurówki są dostępne w różnych kolorach, dzięki czemu można je dopasować do swojego stylu.",
-  price: "19zł",
+  price: "49zł",
   link: "/sznurowki"
   },
   {
@@ -88,7 +88,7 @@ export const tours = [
   img: tour6,
   title: "Pokrowiec",
   text: "Wykonany z wysokiej jakości materiałów, zapewnia maksymalną ochronę przed uszkodzeniami mechanicznymi, wilgocią i zabrudzeniami. Ergonomiczny design z regulowanym paskiem na ramię oraz uchwytami ręcznymi gwarantuje wygodę noszenia i transportu.",
-  price: "89zł",
+  price: "149zł",
   link: "/pokrowiec"
   },
 
