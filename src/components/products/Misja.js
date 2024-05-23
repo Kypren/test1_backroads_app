@@ -8,6 +8,7 @@ const Misja = () => {
 
   return (
     <section className="section" id="about">
+      <div style={divStyle}></div>
       <Title title="Nasza" subTitle="Misja"></Title>
 
       <div className="section-center about-center">
